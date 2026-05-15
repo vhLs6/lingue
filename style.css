@@ -1,10 +1,14 @@
-p, h2, h1, h3 {
+p,
+h2,
+h1,
+h3,
+a {
   color: #1e293b;
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: #F8FAFC;
+  background-color: #f8fafc;
   font-family: Arial, Helvetica, sans-serif;
 }
 header {
@@ -70,18 +74,25 @@ header h1 {
   padding: 0 15px;
 }
 #rodape {
-    background: linear-gradient(to bottom right, #95bdc9, #91b5bf);
-    text-align: center;
-    padding: 20px;
-    border-top: 5px solid #1e293b;
-     border-radius: 10px 10px 0px 0px;
+  background: linear-gradient(to bottom right, #95bdc9, #91b5bf);
+  text-align: center;
+  padding: 20px;
+  border-top: 5px solid #1e293b;
+  border-radius: 10px 10px 0px 0px;
 }
 #rodape p {
   margin: 0;
 }
 #rodape a {
   color: #32425c;
-  
+}
+.button {
+  border: 2px solid;
+  border-color: #1e293b;
+  border-radius: 10px;
+  padding: 3px 5px 3px 5px;
+  font-size: 20px;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .subtitulo {
