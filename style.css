@@ -14,6 +14,7 @@ header {
   gap: 15px;
   background: linear-gradient(to bottom right, #95bdc9, #91b5bf);
   border-bottom: 5px solid #1e293b;
+  border-radius: 0 0 10px 10px;
 }
 header img {
   width: 100px;
@@ -67,6 +68,20 @@ header h1 {
 }
 .texto-aba {
   padding: 0 15px;
+}
+#rodape {
+    background: linear-gradient(to bottom right, #95bdc9, #91b5bf);
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #1e293b;
+     border-radius: 10px 10px 0px 0px;
+}
+#rodape p {
+  margin: 0;
+}
+#rodape a {
+  color: #32425c;
+  
 }
 @media (min-width: 768px) {
   .subtitulo {
