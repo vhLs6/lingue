@@ -1,70 +1,60 @@
+p, h2, h1, h3 {
+  color: #1e293b;
+}
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #d1e5eb, #bfd1d6);
+  background-color: #F8FAFC;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   background: linear-gradient(to bottom right, #95bdc9, #91b5bf);
-  border-bottom: 5px solid #7e9ea8;
+  border-bottom: 5px solid #1e293b;
 }
-
 header img {
   width: 100px;
 }
-
 header h1 {
   text-transform: uppercase;
   font-size: 60px;
 }
-
 .subtitulo {
   font-size: 30px;
   margin: 0;
   margin-top: 10px;
   text-align: center;
 }
-
 .subsubsub {
   font-size: 30px;
   text-align: center;
   margin-bottom: 2px;
-      margin: 0;
+  margin: 0;
 }
-
-/* O fundo cinza/azul que envolve toda a seção de idiomas */
 .abas {
-  background-color: #cfdee3;
-  border: 2px solid #95bdc9;
+  background: linear-gradient(to bottom right, #95bdc9, #91b5bf);
+  border: 2px solid #1e293b;
   border-radius: 20px;
   margin: 15px;
   padding: 15px;
 }
-
-/* O container Flexbox que alinha os cards das bandeiras */
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  align-items: stretch; /* Garante que todos os cards fiquem do mesmo tamanho */
+  align-items: stretch;
   margin-top: 15px;
 }
-
-/* Seleciona as imagens de dentro de cada card corretamente */
 .sub-aba img {
   width: 100%;
   height: 200px;
-  border-bottom: 2px solid #7e9ea8;
-  border-radius: 15px 15px 0 0;
+  border-bottom: 2px solid #1e293b;
+  border-radius: 13px 13px 0 0;
 }
-
-/* O card branco de cada idioma */
 .sub-aba {
   width: 95%;
   max-width: 95%;
@@ -72,14 +62,12 @@ header h1 {
   background-color: white;
   border-radius: 15px;
   padding-bottom: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Um detalhe para dar leve profundidade */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 2px solid #1e293b;
 }
-
 .texto-aba {
-  padding: 0 15px; /* Aumentado para o texto não colar nas bordas do card */
+  padding: 0 15px;
 }
-
-/* --- Responsividade (Telas Maiores que 768px) --- */
 @media (min-width: 768px) {
   .subtitulo {
     font-size: 50px;
@@ -101,11 +89,11 @@ header h1 {
 
   .sub-aba {
     max-width: none;
-    flex: 1; /* Faz os 3 cards dividirem o espaço igualmente lado a lado */
+    flex: 1;
     transition: transform 0.3s ease;
   }
 
   .sub-aba:hover {
-    transform: scale(1.03); /* Efeito sutil ao passar o mouse */
+    transform: scale(1.03);
   }
 }
