@@ -5,10 +5,10 @@ body {
 }
 #sidebar {
   height: 100vh;
-  width: 260px;
+  width: 280px;
   position: fixed;
   top: 0;
-  left: -260px;
+  left: -280px;
   background-color: #0a3161;
   padding-top: 35px;
   transition: left 0.3s ease;
@@ -91,15 +91,16 @@ main {
 .modulo {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  border: 2px solid #b22234;
+  width: 85%;
+  border: 2px solid #fff;
   background-color: #fff;
   color: black;
   border-radius: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   text-decoration: none;
-  text-align: center;
+  text-align: justify;
+  padding-left: 10px;
 }
 .modulo a {
   text-decoration: none;
