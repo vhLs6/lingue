@@ -50,6 +50,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .abasdec {
     background-color: white;
@@ -60,8 +61,7 @@ main {
     border-top: 3px solid #1672a3;
     text-align: center;
     box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-    flex: 1;
+    transition: 0.3s ease;
 }
 .comecar {
     margin-top: 13px;
@@ -85,11 +85,16 @@ main {
     color: #38748e;
     font-size: 20px;
 }
-#irmodulo:hover {
-    background-color: rgb(194, 227, 248);
-}
+
 @media (min-width: 768px) {
     .abasdec:hover {
     scale: 1.05;
+}
+.abasdec {
+    width: 100%;
+    flex: 1;
+}
+#irmodulo:hover {
+    background-color: rgb(194, 227, 248);
 }
 }
