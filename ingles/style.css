@@ -3,31 +3,36 @@ body {
   font-family: Arial, sans-serif;
 }
 #sidebar {
-  height: 100vh;
+  height: 100%;
   width: 250px;
   position: fixed;
   top: 0;
   left: -250px;
-  background-color: pink;
+  background-color: white;
   padding-top: 20px;
   transition: left 0.3s ease;
   text-align: center;
+  z-index: 1;
 }
 #sidebar.open {
   left: 0px;
 }
 #menu {
-    z-index: 2;
-    position: absolute;
-    border: none;
-    font-size: 20px;
-    width: 50px;
-    height: 30px;
-    background-color: pink;
-    height: 100vh;
-    cursor: pointer;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  width: 100%;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
 }
 main {
-    margin-left: 60px;
-    margin-right: 5px;
+  margin: 10px;
+  z-index: 2;
 }
