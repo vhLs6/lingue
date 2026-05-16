@@ -1,3 +1,4 @@
+
 p,
 h2,
 h1,
@@ -54,6 +55,14 @@ header h1 {
   align-items: stretch;
   margin-top: 15px;
 }
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .sub-aba img {
   width: 100%;
   height: 200px;
@@ -69,6 +78,7 @@ header h1 {
   padding-bottom: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border: 2px solid #1e293b;
+  
 }
 .texto-aba {
   padding: 0 15px;
@@ -82,6 +92,7 @@ header h1 {
 }
 #rodape p {
   margin: 0;
+  
 }
 #rodape a {
   color: #32425c;
@@ -93,6 +104,7 @@ header h1 {
   padding: 3px 5px 3px 5px;
   font-size: 20px;
   text-decoration: none;
+  
 }
 @media (min-width: 768px) {
   .subtitulo {
