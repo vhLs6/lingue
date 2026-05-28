@@ -1,0 +1,73 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  text-align: center;
+  background-color: #aa151b;
+  color: #fff;
+  padding: 3px;
+}
+header h1 {
+  margin: 0;
+}
+header p {
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+td,
+th {
+  padding: 10px;
+  border: 2px solid black;
+  font-size: 18px;
+}
+tr:first-child {
+  background-color: #f1bf00;
+  color: #1e293b;
+}
+h2,
+h3 {
+  color: #aa151b;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.exercicio {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+details {
+  border: 2px solid #aa151b;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+summary {
+  color: #aa151b;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 99%;
+  }
+}

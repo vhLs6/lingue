@@ -17,7 +17,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  background: linear-gradient(to bottom right, #95bdc9, #91b5bf);
+  background: linear-gradient(to bottom right, #afe2ed, #afe2ed);
   border-bottom: 5px solid #1e293b;
   border-radius: 0 0 10px 10px;
 }
@@ -41,7 +41,7 @@ header h1 {
   margin: 0;
 }
 .abas {
-  background: linear-gradient(to bottom right, #95bdc9, #91b5bf);
+  background: linear-gradient(to bottom right, #afe2ed, #afe2ed);
   border: 2px solid #1e293b;
   border-radius: 20px;
   margin: 15px;
