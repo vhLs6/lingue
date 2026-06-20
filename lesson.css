@@ -1,7 +1,4 @@
 body {
-  --primary: #0a3161;
-  --accent: #b22234;
-  --accent-text: #fff;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -9,20 +6,20 @@ body {
   color: #1e293b;
 }
 
-body.spanish {
-  --primary: #aa151b;
-  --accent: #f1bf00;
-  --accent-text: #1e293b;
+body.ingles header {
+  background-color: #0a3161;
 }
 
-body.french {
-  --primary: #0055a4;
-  --accent: #ef4135;
+body.espanhol header {
+  background-color: #aa151b;
+}
+
+body.frances header {
+  background-color: #0055a4;
 }
 
 header {
   text-align: center;
-  background-color: var(--primary);
   color: #fff;
   padding: 18px 12px;
 }
@@ -44,7 +41,7 @@ main {
   margin: 18px auto;
 }
 
-.lesson-nav {
+.navegacao-aula {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -52,37 +49,78 @@ main {
   margin: 16px auto;
 }
 
-.lesson-nav a {
-  border: 2px solid var(--primary);
+.navegacao-aula a {
   border-radius: 8px;
   padding: 8px 12px;
-  color: var(--primary);
   text-decoration: none;
   font-weight: 700;
   background-color: #fff;
 }
 
-.lesson-grid {
+body.ingles .navegacao-aula a {
+  border: 2px solid #0a3161;
+  color: #0a3161;
+}
+
+body.espanhol .navegacao-aula a {
+  border: 2px solid #aa151b;
+  color: #aa151b;
+}
+
+body.frances .navegacao-aula a {
+  border: 2px solid #0055a4;
+  color: #0055a4;
+}
+
+.grade-aula {
   display: grid;
   gap: 16px;
 }
 
-.lesson-card {
+.cartao-aula {
   border: 2px solid #d7dee9;
-  border-left: 6px solid var(--accent);
   border-radius: 8px;
   background-color: #f8fafc;
   padding: 14px;
 }
 
-.lesson-card h2 {
+body.ingles .cartao-aula {
+  border-left: 6px solid #b22234;
+}
+
+body.espanhol .cartao-aula {
+  border-left: 6px solid #f1bf00;
+}
+
+body.frances .cartao-aula {
+  border-left: 6px solid #ef4135;
+}
+
+.cartao-aula h2 {
   margin: 0 0 10px;
-  color: var(--primary);
   font-size: 24px;
 }
 
-.lesson-card p,
-.lesson-card li {
+body.ingles .cartao-aula h2,
+body.ingles .pratica h2,
+body.ingles summary {
+  color: #0a3161;
+}
+
+body.espanhol .cartao-aula h2,
+body.espanhol .pratica h2,
+body.espanhol summary {
+  color: #aa151b;
+}
+
+body.frances .cartao-aula h2,
+body.frances .pratica h2,
+body.frances summary {
+  color: #0055a4;
+}
+
+.cartao-aula p,
+.cartao-aula li {
   font-size: 17px;
   line-height: 1.45;
 }
@@ -103,40 +141,59 @@ th {
   font-size: 17px;
 }
 
-tr:first-child {
-  background-color: var(--accent);
-  color: var(--accent-text);
+body.ingles tr:first-child {
+  background-color: #b22234;
+  color: #fff;
 }
 
-.practice {
+body.espanhol tr:first-child {
+  background-color: #f1bf00;
+  color: #1e293b;
+}
+
+body.frances tr:first-child {
+  background-color: #ef4135;
+  color: #fff;
+}
+
+.pratica {
   margin-top: 16px;
 }
 
-.practice h2 {
-  color: var(--primary);
+.pratica h2 {
   text-align: center;
 }
 
 details {
-  border: 2px solid var(--primary);
   border-radius: 8px;
   margin-bottom: 10px;
   padding: 10px;
   background-color: #fff;
 }
 
+body.ingles details {
+  border: 2px solid #0a3161;
+}
+
+body.espanhol details {
+  border: 2px solid #aa151b;
+}
+
+body.frances details {
+  border: 2px solid #0055a4;
+}
+
 summary {
-  color: var(--primary);
   cursor: pointer;
   font-weight: bold;
 }
 
 @media (min-width: 860px) {
-  .lesson-grid {
+  .grade-aula {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lesson-card.full {
+  .cartao-aula.completo {
     grid-column: 1 / -1;
   }
 }
