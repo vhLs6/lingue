@@ -40,12 +40,31 @@ main {
   margin: 10px;
   z-index: 2;
 }
+.titulo-curso {
+  margin-top: 0;
+  color: #0a3161;
+  font-size: 40px;
+  margin-bottom: -8px;
+}
+.intro-curso {
+  color: #0a3161;
+}
 .aba {
   background-color: #f8fafc;
   border-left: 3px solid #3c6eaa;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.titulo-secao {
+  margin: 0;
+  color: #0a3161;
+  font-size: 20px;
+}
+.texto-curso {
+  margin-bottom: 0;
+  font-size: 17px;
+  color: #32425c;
 }
 .abas {
   display: flex;
@@ -65,6 +84,16 @@ main {
   text-align: center;
   box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease;
+}
+.destaque-titulo {
+  font-size: 23px;
+  color: #0a3161;
+}
+.destaque-icone {
+  font-size: 30px;
+}
+.destaque-texto {
+  font-size: 16px;
 }
 .comecar {
   margin-top: 13px;

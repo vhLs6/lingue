@@ -1,0 +1,185 @@
+body {
+  --primary: #0a3161;
+  --accent: #b22234;
+  --accent-text: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #1e293b;
+}
+
+body.spanish {
+  --primary: #aa151b;
+  --accent: #f1bf00;
+  --accent-text: #1e293b;
+}
+
+body.french {
+  --primary: #0055a4;
+  --accent: #ef4135;
+}
+
+#sidebar {
+  height: 100vh;
+  width: 280px;
+  position: fixed;
+  top: 0;
+  left: -280px;
+  background-color: var(--primary);
+  padding-top: 42px;
+  transition: left 0.3s ease;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+#sidebar.open {
+  left: 0;
+}
+
+#sidebar h1,
+#sidebar h2 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+#menu {
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  border: none;
+  font-size: 30px;
+  height: 44px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary);
+  width: 100%;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  margin: 14px;
+  z-index: 1;
+}
+
+.titulo-curso {
+  margin: 0;
+  color: var(--primary);
+  font-size: 38px;
+}
+
+.intro-curso {
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.aba,
+.abasdec {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.aba {
+  border-left: 4px solid var(--accent);
+  padding: 14px;
+}
+
+.titulo-secao {
+  margin: 0;
+  color: var(--primary);
+  font-size: 22px;
+}
+
+.texto-curso {
+  margin-bottom: 0;
+  font-size: 17px;
+  color: #32425c;
+  line-height: 1.45;
+}
+
+.abas {
+  display: flex;
+  margin-top: 16px;
+  align-items: stretch;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.abasdec {
+  width: 100%;
+  padding: 10px;
+  border-top: 4px solid var(--accent);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.destaque-titulo {
+  font-size: 23px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.destaque-texto {
+  font-size: 16px;
+}
+
+.comecar {
+  margin-top: 16px;
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.button-primary {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: var(--accent-text);
+  box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.5);
+  padding: 12px 16px;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.modulo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.modulo a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 24px;
+  }
+
+  .titulo-curso {
+    font-size: 48px;
+  }
+
+  .abasdec:hover {
+    transform: scale(1.04);
+  }
+
+  .abasdec {
+    flex: 1;
+  }
+}

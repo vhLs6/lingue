@@ -1,20 +1,22 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fff
+  background-color: #fff;
 }
 #sidebar {
-  height: 100%;
-  width: 250px;
+  height: 100vh;
+  width: 280px;
   position: fixed;
   top: 0;
-  left: -250px;
-  background-color: #0055A4;
-  padding-top: 25px;
+  left: -280px;
+  background-color: #0055a4;
+  padding-top: 35px;
   transition: left 0.3s ease;
   text-align: center;
   z-index: 1;
   color: #fff;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 #sidebar.open {
   left: 0px;
@@ -26,27 +28,42 @@ body {
   border: none;
   font-size: 30px;
   height: 40px;
-  background-color: transparent;
+  background-color: #0055a4;
   cursor: pointer;
   color: #fff;
-  background-color: #0055A4;
   width: 100%;
   text-align: left;
   -webkit-tap-highlight-color: transparent;
-}
-#sidebar a {
-    color: #fff;
 }
 main {
   margin: 10px;
   z-index: 2;
 }
+.titulo-curso {
+  margin-top: 0;
+  color: #0055a4;
+  font-size: 40px;
+  margin-bottom: -8px;
+}
+.intro-curso {
+  color: #0055a4;
+}
 .aba {
   background-color: #f8fafc;
-  border-left: 3px solid #EF4135;
+  border-left: 3px solid #ef4135;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.titulo-secao {
+  margin: 0;
+  color: #0055a4;
+  font-size: 20px;
+}
+.texto-curso {
+  margin-bottom: 0;
+  font-size: 17px;
+  color: #32425c;
 }
 .abas {
   display: flex;
@@ -62,14 +79,24 @@ main {
   border-radius: 10px;
   padding: 5px;
   padding-top: 0;
-  border-top: 3px solid #EF4135;
+  border-top: 3px solid #ef4135;
   text-align: center;
   box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease;
 }
+.destaque-titulo {
+  font-size: 23px;
+  color: #0055a4;
+}
+.destaque-icone {
+  font-size: 30px;
+}
+.destaque-texto {
+  font-size: 16px;
+}
 .comecar {
   margin-top: 13px;
-  background-color: #0055A4;
+  background-color: #0055a4;
   color: white;
   text-align: center;
   border-radius: 20px;
@@ -80,7 +107,7 @@ main {
   border: none;
   height: 50px;
   border-radius: 10px;
-  background-color: #EF4135;
+  background-color: #ef4135;
   box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.5);
   transition: 0.2s;
 }
@@ -89,7 +116,21 @@ main {
   color: #fff;
   font-size: 20px;
 }
-
+.modulo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: justify;
+  padding-left: 10px;
+}
+.modulo a {
+  color: #0055a4;
+}
 @media (min-width: 768px) {
   .abasdec:hover {
     scale: 1.05;

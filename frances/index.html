@@ -1,75 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francês</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../icons/france_icon.png">
-</head>
-<body>
-    <button id="menu">☰</button>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Francês</title>
+    <link rel="stylesheet" href="../course.css" />
+    <link rel="icon" href="../icons/france_icon.png" />
+  </head>
+  <body class="french">
+    <button id="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
     <aside id="sidebar">
-      <h2>Curso de Francês</h2>
-      <p>Terra de Gigantes</p>
-      <p>Terra de Gigantes</p>
-      <p>Terra de Gigantes</p>
-      <a href="../index.html">Voltar ao Início</a>
+      <h1>Curso de Francês</h1>
+      <hr />
+      <h2>Módulos</h2>
+      <p class="modulo"><a href="./saudacoes/index.html">1 - Saudações básicas</a></p>
+      <p class="modulo"><a href="./pronomes/index.html">2 - Pronomes</a></p>
+      <p class="modulo"><a href="./sujeitos-artigos/index.html">3 - Sujeitos e artigos</a></p>
+      <p class="modulo"><a href="./verbos/index.html">4 - Verbos principais</a></p>
+      <p class="modulo"><a href="./vocabulario/index.html">5 - Vocabulário do dia a dia</a></p>
+      <p class="modulo"><a href="./tempos-verbais/index.html">6 - Tempos verbais básicos</a></p>
+      <p class="modulo"><a href="./perguntas-respostas/index.html">7 - Perguntas e respostas</a></p>
+      <p class="modulo"><a href="./conversacoes/index.html">8 - Conversações práticas</a></p>
+      <hr />
+      <h2>Navegação</h2>
+      <p class="modulo"><a href="../index.html">Voltar ao início</a></p>
     </aside>
     <main>
-      <h1
-        style="
-          margin-top: 0;
-          color: #0055A4;
-          font-size: 40px;
-          margin-bottom: -8px;
-        "
-      >
-        Bem-vindo ao Curso de Francês!
-      </h1>
-      <p style="color: #0055A4">
-        Aprenda francês de forma divertida e eficaz com nosso método exclusivo.
+      <h1 class="titulo-curso">Bem-vindo ao Curso de Francês!</h1>
+      <p class="intro-curso">
+        Aprenda francês começando pelas frases elegantes e úteis que abrem boas
+        conversas.
       </p>
       <section class="aba">
-        <h4 style="margin: 0; color: #0055A4; font-size: 20px;">Sobre o Curso</h4>
-        <p style="margin-bottom: 0; font-size: 17px; color: #32425c">
-          Este curso foi desenvolvido para iniciantes que desejam aprender
-          francês do zero. Você vai aprender desde o alfabeto até conversações
-          do dia a dia, com exercícios práticos e interativos que tornam o
-          aprendizado mais dinâmico. <br /><br />Cada módulo é cuidadosamente
-          estruturado para construir sua confiança e fluência gradualmente.
-          Complete os exercícios, pratique com áudios nativos e acompanhe seu
-          progresso ao longo da jornada!
+        <h2 class="titulo-secao">Sobre o curso</h2>
+        <p class="texto-curso">
+          O curso de francês começa pela comunicação do dia a dia: cumprimentar,
+          se apresentar, fazer perguntas simples e reconhecer expressões muito
+          usadas. Como a pronúncia pode parecer diferente no início, cada módulo
+          trabalha frases curtas para você memorizar o ritmo do idioma.
         </p>
       </section>
       <section class="abas">
         <div class="abasdec">
-          <p style="font-size: 23px; color: #0A3161;">
-            <span style="font-size: 30px">📚</span><br />8 Módulos
-          </p>
-          <p style="font-size: 16px">Conteúdo completo e estruturado</p>
+          <p class="destaque-titulo">8 módulos</p>
+          <p class="destaque-texto">Vocabulário inicial com foco em comunicação.</p>
         </div>
         <div class="abasdec">
-          <p style="font-size: 23px; color: #0A3161;">
-            <span style="font-size: 30px">🎯</span><br />
-            Exercícios Práticos
-          </p>
-          <p style="font-size: 16px">Aprenda fazendo, não apenas lendo</p>
+          <p class="destaque-titulo">Exercícios práticos</p>
+          <p class="destaque-texto">Treine cumprimentos, respostas e pequenas falas.</p>
         </div>
         <div class="abasdec">
-          <p style="font-size: 23px; color: #0A3161;">
-            <span style="font-size: 30px">🏆</span><br />Certificado
-          </p>
-          <p style="font-size: 16px">Receba ao concluir todos os módulos</p>
+          <p class="destaque-titulo">Roteiro completo</p>
+          <p class="destaque-texto">Construa base com pronomes, artigos e diálogos.</p>
         </div>
       </section>
       <section class="comecar">
-        <h2 id="teste">Pronto para começar?</h2>
-        <button id="irmodulo">
-          <a href="alfabeto/index.html" target="_blank">Começar primeiro módulo</a>
-        </button>
+        <h2>Pronto para começar?</h2>
+        <a class="button-primary" href="./saudacoes/index.html">Começar primeiro módulo</a>
       </section>
     </main>
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>

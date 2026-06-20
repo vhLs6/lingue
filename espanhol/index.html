@@ -3,80 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Espanhol</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../icons/spain_icon.png" type="image/png">
+    <title>Curso de Espanhol</title>
+    <link rel="stylesheet" href="../course.css" />
+    <link rel="icon" href="../icons/spain_icon.png" type="image/png" />
   </head>
-  <body>
-    <button id="menu">☰</button>
+  <body class="spanish">
+    <button id="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
     <aside id="sidebar">
       <h1>Curso de Espanhol</h1>
-      <hr>
-      <h2>MÓDULOS</h2>
-      <p class="modulo"><a href="./alfabeto/index.html">1 - Alfabeto</a></p>
-      <p class="modulo"><a href="">2 - Saudações básicas</a></p>
-      <p class="modulo"><a href="">3 - Pronomes</a></p>
-      <p class="modulo"><a href="">4 - Verbos principais</a></p>
-      <p class="modulo"><a href="">5 - Vocabulário do dia a dia</a></p>
-      <p class="modulo"><a href="">6 - Tempos verbais básicos</a></p>
-      <p class="modulo"><a href="">7 - Perguntas e respostas</a></p>
-      <p class="modulo"><a href="">8 - Conversações práticas</a></p>
-      <hr>
-      <h2>NAVEGAÇÃO</h2>
-      <p class="modulo"><a href="../index.html">Voltar ao Início</a></p>
+      <hr />
+      <h2>Módulos</h2>
+      <p class="modulo"><a href="./saudacoes/index.html">1 - Saudações básicas</a></p>
+      <p class="modulo"><a href="./pronomes/index.html">2 - Pronomes</a></p>
+      <p class="modulo"><a href="./sujeitos-artigos/index.html">3 - Sujeitos e artigos</a></p>
+      <p class="modulo"><a href="./verbos/index.html">4 - Verbos principais</a></p>
+      <p class="modulo"><a href="./vocabulario/index.html">5 - Vocabulário do dia a dia</a></p>
+      <p class="modulo"><a href="./tempos-verbais/index.html">6 - Tempos verbais básicos</a></p>
+      <p class="modulo"><a href="./perguntas-respostas/index.html">7 - Perguntas e respostas</a></p>
+      <p class="modulo"><a href="./conversacoes/index.html">8 - Conversações práticas</a></p>
+      <hr />
+      <h2>Navegação</h2>
+      <p class="modulo"><a href="../index.html">Voltar ao início</a></p>
     </aside>
     <main>
-      <h1
-        style="
-          margin-top: 0;
-          color: #AA151B;
-          font-size: 40px;
-          margin-bottom: -8px;
-        "
-      >
-        Bem-vindo ao Curso de Espanhol!
-      </h1>
-      <p style="color: #AA151B">
-        Aprenda espanhol de forma divertida e eficaz com nosso método exclusivo.
+      <h1 class="titulo-curso">Bem-vindo ao Curso de Espanhol!</h1>
+      <p class="intro-curso">
+        Explore o espanhol usado em viagens, amizades e conversas pela América
+        Latina.
       </p>
       <section class="aba">
-        <h4 style="margin: 0; color: #AA151B; font-size: 20px;">Sobre o Curso</h4>
-        <p style="margin-bottom: 0; font-size: 17px; color: #32425c">
-          Este curso foi desenvolvido para iniciantes que desejam aprender
-          espanhol do zero. Você vai aprender desde o alfabeto até conversações
-          do dia a dia, com exercícios práticos e interativos que tornam o
-          aprendizado mais dinâmico. <br /><br />Cada módulo é cuidadosamente
-          estruturado para construir sua confiança e fluência gradualmente.
-          Complete os exercícios, pratique com áudios nativos e acompanhe seu
-          progresso ao longo da jornada!
+        <h2 class="titulo-secao">Sobre o curso</h2>
+        <p class="texto-curso">
+          O curso de espanhol aproveita a proximidade com o português, mas chama
+          atenção para diferenças que confundem no começo: cumprimentos,
+          pronomes, verbos e expressões comuns. Você vai praticar diálogos
+          curtos para falar com mais naturalidade desde os primeiros módulos.
         </p>
       </section>
       <section class="abas">
         <div class="abasdec">
-          <p style="font-size: 23px; color: #AA151B;">
-            <span style="font-size: 30px">📚</span><br />8 Módulos
-          </p>
-          <p style="font-size: 16px">Conteúdo completo e estruturado</p>
+          <p class="destaque-titulo">8 módulos</p>
+          <p class="destaque-texto">Uma sequência direta para começar a conversar.</p>
         </div>
         <div class="abasdec">
-          <p style="font-size: 23px; color: #AA151B;">
-            <span style="font-size: 30px">🎯</span><br />
-            Exercícios Práticos
-          </p>
-          <p style="font-size: 16px">Aprenda fazendo, não apenas lendo</p>
+          <p class="destaque-titulo">Exercícios práticos</p>
+          <p class="destaque-texto">Compare palavras parecidas e pratique respostas.</p>
         </div>
         <div class="abasdec">
-          <p style="font-size: 23px; color: #AA151B;">
-            <span style="font-size: 30px">🏆</span><br />Certificado
-          </p>
-          <p style="font-size: 16px">Receba ao concluir todos os módulos</p>
+          <p class="destaque-titulo">Roteiro completo</p>
+          <p class="destaque-texto">Passe por pronomes, verbos, tempos e diálogos.</p>
         </div>
       </section>
       <section class="comecar">
-        <h2 id="teste">Pronto para começar?</h2>
-        <button id="irmodulo">
-          <a href="./alfabeto/index.html">Começar primeiro módulo</a>
-        </button>
+        <h2>Pronto para começar?</h2>
+        <a class="button-primary" href="./saudacoes/index.html">Começar primeiro módulo</a>
       </section>
     </main>
     <script src="../script.js"></script>
