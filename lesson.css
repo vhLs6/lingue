@@ -6,15 +6,15 @@ body {
   color: #1e293b;
 }
 
-body.ingles header {
+.fundo-ingles {
   background-color: #0a3161;
 }
 
-body.espanhol header {
+.fundo-espanhol {
   background-color: #aa151b;
 }
 
-body.frances header {
+.fundo-frances {
   background-color: #0055a4;
 }
 
@@ -37,7 +37,8 @@ header p {
 }
 
 main {
-  width: min(1120px, calc(100% - 24px));
+  width: 94%;
+  max-width: 1120px;
   margin: 18px auto;
 }
 
@@ -49,7 +50,9 @@ main {
   margin: 16px auto;
 }
 
-.navegacao-aula a {
+.botao-ingles,
+.botao-espanhol,
+.botao-frances {
   border-radius: 8px;
   padding: 8px 12px;
   text-decoration: none;
@@ -57,17 +60,17 @@ main {
   background-color: #fff;
 }
 
-body.ingles .navegacao-aula a {
+.botao-ingles {
   border: 2px solid #0a3161;
   color: #0a3161;
 }
 
-body.espanhol .navegacao-aula a {
+.botao-espanhol {
   border: 2px solid #aa151b;
   color: #aa151b;
 }
 
-body.frances .navegacao-aula a {
+.botao-frances {
   border: 2px solid #0055a4;
   color: #0055a4;
 }
@@ -84,38 +87,36 @@ body.frances .navegacao-aula a {
   padding: 14px;
 }
 
-body.ingles .cartao-aula {
+.borda-ingles {
   border-left: 6px solid #b22234;
 }
 
-body.espanhol .cartao-aula {
+.borda-espanhol {
   border-left: 6px solid #f1bf00;
 }
 
-body.frances .cartao-aula {
+.borda-frances {
   border-left: 6px solid #ef4135;
 }
 
-.cartao-aula h2 {
+.titulo-aula {
   margin: 0 0 10px;
   font-size: 24px;
 }
 
-body.ingles .cartao-aula h2,
-body.ingles .pratica h2,
-body.ingles summary {
+.titulo-pratica {
+  text-align: center;
+}
+
+.texto-ingles {
   color: #0a3161;
 }
 
-body.espanhol .cartao-aula h2,
-body.espanhol .pratica h2,
-body.espanhol summary {
+.texto-espanhol {
   color: #aa151b;
 }
 
-body.frances .cartao-aula h2,
-body.frances .pratica h2,
-body.frances summary {
+.texto-frances {
   color: #0055a4;
 }
 
@@ -141,17 +142,17 @@ th {
   font-size: 17px;
 }
 
-body.ingles tr:first-child {
+.linha-tabela-ingles {
   background-color: #b22234;
   color: #fff;
 }
 
-body.espanhol tr:first-child {
+.linha-tabela-espanhol {
   background-color: #f1bf00;
   color: #1e293b;
 }
 
-body.frances tr:first-child {
+.linha-tabela-frances {
   background-color: #ef4135;
   color: #fff;
 }
@@ -160,26 +161,24 @@ body.frances tr:first-child {
   margin-top: 16px;
 }
 
-.pratica h2 {
-  text-align: center;
-}
-
-details {
+.caixa-ingles,
+.caixa-espanhol,
+.caixa-frances {
   border-radius: 8px;
   margin-bottom: 10px;
   padding: 10px;
   background-color: #fff;
 }
 
-body.ingles details {
+.caixa-ingles {
   border: 2px solid #0a3161;
 }
 
-body.espanhol details {
+.caixa-espanhol {
   border: 2px solid #aa151b;
 }
 
-body.frances details {
+.caixa-frances {
   border: 2px solid #0055a4;
 }
 
@@ -190,10 +189,10 @@ summary {
 
 @media (min-width: 860px) {
   .grade-aula {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .cartao-aula.completo {
+  .completo {
     grid-column: 1 / -1;
   }
 }

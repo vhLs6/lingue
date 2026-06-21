@@ -18,7 +18,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  background: #afe2ed;
+  background: #95bdc9;
   border-bottom: 5px solid #1e293b;
   border-radius: 0 0 8px 8px;
 }
@@ -59,7 +59,7 @@ main {
 }
 
 .abas {
-  background: #afe2ed;
+  background: #95bdc9;
   border: 2px solid #1e293b;
   border-radius: 8px;
   padding: 15px;
