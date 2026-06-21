@@ -9,7 +9,7 @@ body {
   position: fixed;
   top: 0;
   left: -280px;
-  background-color: #AA151B;
+  background-color: #aa151b;
   padding-top: 35px;
   transition: left 0.3s ease;
   text-align: center;
@@ -31,7 +31,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   color: #fff;
-  background-color: #AA151B;
+  background-color: #aa151b;
   width: 100%;
   text-align: left;
   -webkit-tap-highlight-color: transparent;
@@ -51,7 +51,7 @@ main {
 }
 .aba {
   background-color: #f8fafc;
-  border-left: 3px solid #F1BF00;
+  border-left: 3px solid #f1bf00;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@ main {
   border-radius: 10px;
   padding: 5px;
   padding-top: 0;
-  border-top: 3px solid #F1BF00;
+  border-top: 3px solid #f1bf00;
   text-align: center;
   box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease;
@@ -97,7 +97,7 @@ main {
 }
 .comecar {
   margin-top: 13px;
-  background-color: #AA151B;
+  background-color: #aa151b;
   color: white;
   text-align: center;
   border-radius: 20px;
@@ -108,7 +108,7 @@ main {
   border: none;
   height: 50px;
   border-radius: 10px;
-  background-color: #F1BF00;
+  background-color: #f1bf00;
   box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.5);
   transition: 0.2s;
 }
@@ -130,7 +130,7 @@ main {
   padding-left: 10px;
 }
 .modulo a {
-  color: #AA151B;
+  color: #aa151b;
 }
 
 @media (min-width: 768px) {

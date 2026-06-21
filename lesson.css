@@ -18,6 +18,14 @@ body {
   background-color: #0055a4;
 }
 
+.fundo-alemao {
+  background-color: #111;
+}
+
+.fundo-italiano {
+  background-color: #008c45;
+}
+
 header {
   text-align: center;
   color: #fff;
@@ -52,7 +60,9 @@ main {
 
 .botao-ingles,
 .botao-espanhol,
-.botao-frances {
+.botao-frances,
+.botao-alemao,
+.botao-italiano {
   border-radius: 8px;
   padding: 8px 12px;
   text-decoration: none;
@@ -73,6 +83,16 @@ main {
 .botao-frances {
   border: 2px solid #0055a4;
   color: #0055a4;
+}
+
+.botao-alemao {
+  border: 2px solid #111;
+  color: #111;
+}
+
+.botao-italiano {
+  border: 2px solid #008c45;
+  color: #008c45;
 }
 
 .grade-aula {
@@ -99,6 +119,14 @@ main {
   border-left: 6px solid #ef4135;
 }
 
+.borda-alemao {
+  border-left: 6px solid #dd0000;
+}
+
+.borda-italiano {
+  border-left: 6px solid #cd212a;
+}
+
 .titulo-aula {
   margin: 0 0 10px;
   font-size: 24px;
@@ -118,6 +146,14 @@ main {
 
 .texto-frances {
   color: #0055a4;
+}
+
+.texto-alemao {
+  color: #111;
+}
+
+.texto-italiano {
+  color: #008c45;
 }
 
 .cartao-aula p,
@@ -157,13 +193,25 @@ th {
   color: #fff;
 }
 
+.linha-tabela-alemao {
+  background-color: #ffce00;
+  color: #111;
+}
+
+.linha-tabela-italiano {
+  background-color: #cd212a;
+  color: #fff;
+}
+
 .pratica {
   margin-top: 16px;
 }
 
 .caixa-ingles,
 .caixa-espanhol,
-.caixa-frances {
+.caixa-frances,
+.caixa-alemao,
+.caixa-italiano {
   border-radius: 8px;
   margin-bottom: 10px;
   padding: 10px;
@@ -180,6 +228,14 @@ th {
 
 .caixa-frances {
   border: 2px solid #0055a4;
+}
+
+.caixa-alemao {
+  border: 2px solid #111;
+}
+
+.caixa-italiano {
+  border: 2px solid #008c45;
 }
 
 summary {

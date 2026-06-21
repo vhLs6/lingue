@@ -44,22 +44,24 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-body.ingles #sidebar,
-body.ingles #menu,
-body.ingles .comecar {
+.fundo-curso-ingles {
   background-color: #0a3161;
 }
 
-body.espanhol #sidebar,
-body.espanhol #menu,
-body.espanhol .comecar {
+.fundo-curso-espanhol {
   background-color: #aa151b;
 }
 
-body.frances #sidebar,
-body.frances #menu,
-body.frances .comecar {
+.fundo-curso-frances {
   background-color: #0055a4;
+}
+
+.fundo-curso-alemao {
+  background-color: #111;
+}
+
+.fundo-curso-italiano {
+  background-color: #008c45;
 }
 
 main {
@@ -76,28 +78,24 @@ main {
   font-size: 18px;
 }
 
-body.ingles .titulo-curso,
-body.ingles .intro-curso,
-body.ingles .titulo-secao,
-body.ingles .destaque-titulo,
-body.ingles .modulo a {
+.texto-curso-ingles {
   color: #0a3161;
 }
 
-body.espanhol .titulo-curso,
-body.espanhol .intro-curso,
-body.espanhol .titulo-secao,
-body.espanhol .destaque-titulo,
-body.espanhol .modulo a {
+.texto-curso-espanhol {
   color: #aa151b;
 }
 
-body.frances .titulo-curso,
-body.frances .intro-curso,
-body.frances .titulo-secao,
-body.frances .destaque-titulo,
-body.frances .modulo a {
+.texto-curso-frances {
   color: #0055a4;
+}
+
+.texto-curso-alemao {
+  color: #111;
+}
+
+.texto-curso-italiano {
+  color: #008c45;
 }
 
 .aba,
@@ -111,16 +109,24 @@ body.frances .modulo a {
   padding: 14px;
 }
 
-body.ingles .aba {
+.borda-curso-ingles {
   border-left: 4px solid #b22234;
 }
 
-body.espanhol .aba {
+.borda-curso-espanhol {
   border-left: 4px solid #f1bf00;
 }
 
-body.frances .aba {
+.borda-curso-frances {
   border-left: 4px solid #ef4135;
+}
+
+.borda-curso-alemao {
+  border-left: 4px solid #dd0000;
+}
+
+.borda-curso-italiano {
+  border-left: 4px solid #cd212a;
 }
 
 .titulo-secao {
@@ -151,16 +157,24 @@ body.frances .aba {
   transition: 0.3s ease;
 }
 
-body.ingles .abasdec {
+.topo-curso-ingles {
   border-top: 4px solid #b22234;
 }
 
-body.espanhol .abasdec {
+.topo-curso-espanhol {
   border-top: 4px solid #f1bf00;
 }
 
-body.frances .abasdec {
+.topo-curso-frances {
   border-top: 4px solid #ef4135;
+}
+
+.topo-curso-alemao {
+  border-top: 4px solid #dd0000;
+}
+
+.topo-curso-italiano {
+  border-top: 4px solid #cd212a;
 }
 
 .destaque-titulo {
@@ -190,18 +204,28 @@ body.frances .abasdec {
   text-decoration: none;
 }
 
-body.ingles .botao-principal {
+.botao-principal-ingles {
   background-color: #b22234;
   color: #fff;
 }
 
-body.espanhol .botao-principal {
+.botao-principal-espanhol {
   background-color: #f1bf00;
   color: #1e293b;
 }
 
-body.frances .botao-principal {
+.botao-principal-frances {
   background-color: #ef4135;
+  color: #fff;
+}
+
+.botao-principal-alemao {
+  background-color: #dd0000;
+  color: #fff;
+}
+
+.botao-principal-italiano {
+  background-color: #cd212a;
   color: #fff;
 }
 
